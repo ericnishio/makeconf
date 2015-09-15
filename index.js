@@ -3,24 +3,25 @@
 const prompt = require('prompt');
 const clc = require('cli-color');
 const cwd = require('./lib/cwd');
-const loadSchema = require('./lib/schema');
+const load = require('./lib/load');
 const save = require('./lib/save');
-
+const logger = require('./lib/logger');
 const makeconfjson = require(cwd('makeconf.json'));
 
-loadSchema(makeconfjson)
+load(makeconfjson)
   .then((schema) => {
     prompt.get(schema, (err, result) => {
       if (err) {
         return;
       }
 
-      save(result, makeconfjson.type, makeconfjson.file)
+      save(result, makeconfjson)
         .then((savedResult) => {
-          console.log(clc.green(`\n[makeconf] Config saved in ${savedResult.file}\n`));
-          console.log(savedResult.contents);
+          logger.success(`Config saved in ${savedResult.file}`);
         }, (e) => {
-          console.error(clc.red(`[makeconf] ${e}`));
+          logger.error(e);
         });
     });
+  }, (err) => {
+    logger.error(err);
   });
