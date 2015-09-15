@@ -1,7 +1,7 @@
 {
   "name": "makeconf",
   "version": "1.0.0",
-  "description": "An interactive config generator",
+  "description": "An interactive local config generator",
   "main": "index.js",
   "engine": "node 4.0.0",
   "scripts": {
@@ -9,8 +9,11 @@
   },
   "keywords": [
     "config",
+    "local",
+    ".env",
     "env",
     "generator",
+    "interactive",
     "cli"
   ],
   "author": "Eric Nishio <eric@self-learner.com>",
