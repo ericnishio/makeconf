@@ -37,21 +37,17 @@ Create a `makeconf.json` file in your project directory:
   "type": ".env",
   "file": ".env",
   "config": {
-    "s3_access_key": {
-      "description": "Your S3 access key"
+    "S3_ACCESS_KEY": {
+      "description": "Your Amazon S3 access key"
     },
-    "debug": {
+    "DEBUG": {
       "description": "Enable debug mode",
       "default": false,
       "required": true
     },
-    "database": {
-      "description": "Database type",
+    "DATABASE": {
+      "description": "Database driver",
       "required": true
-    },
-    "alert_level": {
-      "default": 1,
-      "description": "Alert level"
     }
   }
 }
