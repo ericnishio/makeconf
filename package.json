@@ -1,0 +1,28 @@
+{
+  "name": "makeconf",
+  "version": "1.0.0",
+  "description": "An interactive config generator",
+  "main": "index.js",
+  "engine": "node 4.0.0",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "config",
+    "env",
+    "generator",
+    "cli"
+  ],
+  "author": "Eric Nishio <eric@self-learner.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cli-color": "^1.0.0",
+    "envfile": "^1.0.0",
+    "lodash": "^3.10.1",
+    "prompt": "^0.2.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericnishio/makeconf.git"
+  }
+}
