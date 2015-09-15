@@ -5,7 +5,7 @@
   "main": "index.js",
   "engine": "node 4.0.0",
   "bin": {
-    "makeconf": "index.js"
+    "makeconf": "bin/makeconf"
   },
   "preferGlobal": "true",
   "scripts": {

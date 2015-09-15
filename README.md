@@ -1,18 +1,26 @@
 makeconf
 ========
 
-An interactive config generator that creates environment configs (e.g. `.env`)
-and keeps them up to date.
+An interactive local config generator that makes it easy to collaboratively
+maintain configuration files (e.g. `.env`).
 
-*makeconf* can be conveniently added to the `preinstall` script in your project's
-package.json file, prompting developers to easily review and update their local
-config file every time they run `npm install`.
+*makeconf* can be conveniently invoked from within the `postinstall` script
+in your project's package.json file, prompting your buddies to review and update
+their local config upon running `npm install`.
 
 ## Setup
 
 ```
 $ npm install -g makeconf
 ```
+
+or
+
+```
+$ npm install makeconf --save-dev
+```
+
+and run `node_modules/makeconf/bin/makeconf` locally.
 
 ## Usage
 
