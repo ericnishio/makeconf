@@ -1,8 +1,12 @@
 makeconf
 ========
 
+[![NPM version][npm-image]][npm-url]
+
 An interactive local config generator that makes it easy to collaboratively
-maintain configuration files (e.g. `.env`).
+maintain configuration files.
+
+Generates: `.env`
 
 *makeconf* can be conveniently invoked from within the `postinstall` script
 in your project's package.json file, prompting your buddies to review and update
@@ -56,3 +60,10 @@ In your project directory, run:
 ```
 $ makeconf
 ```
+
+## License
+
+MIT © [Eric Nishio](http://ericnish.io)
+
+[npm-url]: https://npmjs.org/package/makeconf
+[npm-image]: https://img.shields.io/npm/v/makeconf.svg?style=flat-square
