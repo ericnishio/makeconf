@@ -3,6 +3,8 @@ makeconf
 
 [![NPM version][npm-image]][npm-url]
 
+**REQUIRES Node v4.0.0!**
+
 An interactive local config generator that makes it easy to collaboratively
 maintain configuration files.
 
