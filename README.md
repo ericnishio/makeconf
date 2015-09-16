@@ -67,4 +67,4 @@ MIT © [Eric Nishio](http://ericnish.io)
 
 [npm-url]: https://npmjs.org/package/makeconf
 [npm-image]: https://img.shields.io/npm/v/makeconf.svg?style=flat-square
-[gif]: https://s3-eu-west-1.amazonaws.com/ericnishio/gifs/makeconf-demo.gif
+[gif]: /doc/demo.gif
