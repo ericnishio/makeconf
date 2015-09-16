@@ -4,7 +4,7 @@ const prompt = require('prompt');
 const clc = require('cli-color');
 const cwd = require('./lib/cwd');
 const load = require('./lib/load');
-const save = require('./lib/save');
+const delegate = require('./lib/delegate');
 const logger = require('./lib/logger');
 const makeconfjson = require(cwd('makeconf.json'));
 
@@ -15,9 +15,9 @@ load(makeconfjson)
         return;
       }
 
-      save(result, makeconfjson)
+      delegate(result, makeconfjson)
         .then((savedResult) => {
-          logger.success(`Config saved in ${savedResult.file}`);
+          logger.success(`Saved config in ${savedResult.file}`);
         }, (e) => {
           logger.error(e);
         });

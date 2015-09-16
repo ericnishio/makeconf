@@ -10,8 +10,6 @@ maintain configuration files.*
 
 ![makeconf][gif]
 
-Generates: `.env`
-
 *makeconf* can be conveniently invoked from within the `postinstall` script
 in your project's package.json file, prompting your buddies to review and update
 their local config upon running `npm install`.
@@ -33,6 +31,8 @@ and run `node_modules/makeconf/bin/makeconf` locally.
 ## Usage
 
 Create a `makeconf.json` file in your project directory:
+
+Available types: `.env`, `module.exports`
 
 ```
 {

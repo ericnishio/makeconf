@@ -25,6 +25,7 @@
   "dependencies": {
     "cli-color": "^1.0.0",
     "envfile": "^1.0.0",
+    "handlebars": "^4.0.2",
     "lodash": "^3.10.1",
     "prompt": "^0.2.14"
   },
