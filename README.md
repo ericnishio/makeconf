@@ -8,7 +8,7 @@ makeconf
 *An interactive local config generator that makes it easy to collaboratively
 maintain configuration files.*
 
-[![makeconf][gif]]
+![makeconf][gif]
 
 Generates: `.env`
 
