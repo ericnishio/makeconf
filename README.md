@@ -5,8 +5,8 @@ makeconf
 
 **REQUIRES Node v4.0.0!**
 
-*An interactive local config generator that makes it easy to collaboratively
-maintain configuration files.*
+*An interactive local config generator that makes it easier to coordinate
+configuration files within a team.*
 
 ![makeconf][gif]
 

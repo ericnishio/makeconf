@@ -1,7 +1,7 @@
 {
   "name": "makeconf",
   "version": "1.2.1",
-  "description": "An interactive local config generator.",
+  "description": "An interactive local config generator for better team coordination.",
   "main": "index.js",
   "engine": "node 4.0.0",
   "bin": {
