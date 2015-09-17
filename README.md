@@ -14,6 +14,11 @@ configuration files within a team.*
 in your project's package.json file, prompting your buddies to review and update
 their local config upon running `npm install`.
 
+## Supported config formats
+
+- `.env`
+- `module.exports` (the ubiquitous Node module object containing key-value pairs)
+
 ## Setup
 
 ```
@@ -26,17 +31,13 @@ or
 $ npm install makeconf --save-dev
 ```
 
-and run `node_modules/makeconf/bin/makeconf` locally.
-
 ## Usage
 
 Create a `makeconf.json` file in your project directory:
 
-Available types: `.env`, `module.exports`
-
 ```
 {
-  "type": ".env",
+  "format": ".env",
   "file": ".env",
   "config": {
     "S3_ACCESS_KEY": {
@@ -55,11 +56,19 @@ Available types: `.env`, `module.exports`
 }
 ```
 
-In your project directory, run:
+Then generate your config file by running:
 
 ```
 $ makeconf
 ```
+
+or
+
+```
+$ node_modules/makeconf/bin/makeconf
+```
+
+if you installed makeconf locally.
 
 ## License
 
