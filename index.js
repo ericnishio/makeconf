@@ -1,7 +1,6 @@
 'use strict';
 
 const prompt = require('prompt');
-const clc = require('cli-color');
 const cwd = require('./lib/cwd');
 const load = require('./lib/load');
 const delegate = require('./lib/delegate');
