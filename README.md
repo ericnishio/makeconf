@@ -5,7 +5,7 @@ makeconf
 
 **REQUIRES Node v4.0.0!**
 
-*An interactive local config generator that makes it easier to coordinate
+*An interactive config generator that makes it easier to manage local
 configuration files within a team.*
 
 ![makeconf][gif]
@@ -14,9 +14,10 @@ configuration files within a team.*
 in your project's package.json file, prompting your buddies to review and update
 their local config upon running `npm install`.
 
-## Supported config formats
+## Supported output formats
 
 - `.env`
+- `json`
 - `module.exports` (the ubiquitous Node module object containing key-value pairs)
 
 ## Setup
@@ -40,8 +41,13 @@ Create a `makeconf.json` file in your project directory:
   "format": ".env",
   "file": ".env",
   "config": {
-    "S3_ACCESS_KEY": {
-      "description": "Your Amazon S3 access key"
+    "S3": {
+      "ACCESS_KEY": {
+        "description": "Your Amazon S3 access key"
+      },
+      "SECRET": {
+        "description": "Your Amazon S3 secret"
+      }
     },
     "DEBUG": {
       "description": "Enable debug mode",
