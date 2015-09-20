@@ -9,6 +9,7 @@
   },
   "preferGlobal": "true",
   "scripts": {
+    "test": "node node_modules/mocha/bin/mocha",
     "lint": "node node_modules/eslint/bin/eslint.js index.js lib",
     "prepublish": "npm run lint"
   },
@@ -34,6 +35,9 @@
     "url": "https://github.com/ericnishio/makeconf.git"
   },
   "devDependencies": {
-    "eslint": "^1.4.1"
+    "chai": "^3.2.0",
+    "eslint": "^1.4.1",
+    "mocha": "^2.3.2",
+    "sinon": "^1.16.1"
   }
 }
