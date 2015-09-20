@@ -26,12 +26,6 @@ their local config upon running `npm install`.
 $ npm install -g makeconf
 ```
 
-or
-
-```
-$ npm install makeconf --save-dev
-```
-
 ## Usage
 
 Create a `makeconf.json` file in your project directory:
@@ -68,13 +62,11 @@ Then generate your config file by running:
 $ makeconf
 ```
 
-or
+## Tests
 
 ```
-$ node_modules/makeconf/bin/makeconf
+$ npm test
 ```
-
-if you installed makeconf locally.
 
 ## License
 
