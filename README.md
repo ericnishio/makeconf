@@ -62,12 +62,6 @@ Then generate your config file by running:
 $ makeconf
 ```
 
-## Tests
-
-```
-$ npm test
-```
-
 ## License
 
 MIT © [Eric Nishio](http://ericnish.io)
