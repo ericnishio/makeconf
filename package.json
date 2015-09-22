@@ -3,7 +3,7 @@
   "version": "1.4.1",
   "description": "An interactive local config generator for better team coordination.",
   "main": "index.js",
-  "engineStrict": true,
+  "engine-strict": true,
   "engines": {
     "node": ">=4.0.0"
   },
