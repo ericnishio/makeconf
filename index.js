@@ -9,6 +9,9 @@ const makeconfjson = require(cwd('makeconf.json'));
 
 load(makeconfjson)
   .then((schema) => {
+    prompt.message = '';
+    prompt.delimiter = '';
+
     prompt.get(schema, (err, result) => {
       if (err) {
         return;
