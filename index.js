@@ -11,6 +11,7 @@ const makeconfjson = require(cwd('makeconf.json'));
 
 commander
   .version(pkg.version)
+  .option('-n, --only-new', 'prompt only if there are new/unconfigured settings')
   .parse(process.argv);
 
 load(makeconfjson)
