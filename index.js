@@ -1,11 +1,17 @@
 'use strict';
 
 const prompt = require('prompt');
+const commander = require('commander');
+const pkg = require('./package.json');
 const cwd = require('./lib/cwd');
 const load = require('./lib/load');
 const delegate = require('./lib/delegate');
 const logger = require('./lib/logger');
 const makeconfjson = require(cwd('makeconf.json'));
+
+commander
+  .version(pkg.version)
+  .parse(process.argv);
 
 load(makeconfjson)
   .then((schema) => {
