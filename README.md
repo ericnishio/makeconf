@@ -18,7 +18,7 @@ their local config upon running `npm install`.
 
 - `.env`
 - `json`
-- `module.exports` (the ubiquitous Node module object containing key-value pairs)
+- `module.exports` (object)
 
 ## Setup
 
